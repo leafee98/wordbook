@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">WordBook</string>
+    <string name="search_something">search_something</string>
+    <string name="preset_word">preset word</string>
+    <string name="preset_interpretation">preset interpretation</string>
+    <string name="preset_example">preset example</string>
+    <string name="searchWord">search</string>
+    <string name="addWord">new word</string>
+    <string name="new_content">new content</string>
+    <string name="word">word</string>
+    <string name="interpretation">interpretation</string>
+    <string name="example">example</string>
+    <string name="save">save</string>
+    <string name="uselessLayout">the default layout, but useless</string>
+    <string name="help_usage_01">
+        &#160;&#160;&#160;&#160;使用方法: \n
+        &#160;&#160;&#160;&#160;点击单词可以显示单词的详细信息, 包括单词/释义/例句; \n
+        &#160;&#160;&#160;&#160;点击列表的叉号可以删除单词, 注意此操作不可恢复; \n
+        &#160;&#160;&#160;&#160;点击"NEW WORD"按钮可以跳转到新页面添加单词; \n
+        &#160;&#160;&#160;&#160;在输入框输入任意部分单词后点击"SEARCH"可以进行单词的模糊搜索; \n
+        &#160;&#160;&#160;&#160;清空输入框文字后点击"SEARCH"可以获取全部单词. \n\n
+
+        &#160;&#160;&#160;&#160;Provider: \n
+        &#160;&#160;&#160;&#160;uri为com.example.wordbook.provider.Provider/word, 在进行所有操作时, 都需要完整且正确匹配此uri. \n
+        &#160;&#160;&#160;&#160;query: selection设定为要搜索的单词, 其他参数会被忽略, 搜索方式是模糊搜索. \n
+        &#160;&#160;&#160;&#160;insert: 需要在contentValue中设置word,interpretation,example,分别是单词/释义/例句. 返回的uri中item描述是单词在数据库中的id. \n
+        &#160;&#160;&#160;&#160;update: 需要在values中设置id,word,interpretation,example, 更新单词时, 会将数据库中id与所给id相同的行, 全部更新为values中给的值. 其他参数会被忽略. \n
+        &#160;&#160;&#160;&#160;delete: 需要在selection中以字符串的形式保存所要删除的单词的id, 其他参数会被忽略. \n
+    </string>
+    <string name="help">help</string>
+    <string name="title_activity_help">帮助</string>
+    <string name="word_detail">word detail</string>
+    <string name="word_add">add word</string>
+</resources>

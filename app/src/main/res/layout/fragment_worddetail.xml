@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/word_detail"
+        android:textAlignment="center"
+        android:textSize="35sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="@string/word" />
+
+    <TextView
+        android:id="@+id/textView_wordDetail_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:paddingStart="15sp"
+        android:paddingEnd="15sp"
+        android:textSize="20sp"
+        android:text="@string/preset_word" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="@string/interpretation" />
+
+    <TextView
+        android:id="@+id/textView_wordDetail_interpretation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:paddingStart="15sp"
+        android:paddingEnd="15sp"
+        android:textSize="20sp"
+        android:text="@string/preset_interpretation" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="@string/example" />
+
+    <TextView
+        android:id="@+id/textView_wordDetail_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:paddingStart="15sp"
+        android:paddingEnd="15sp"
+        android:textSize="20sp"
+        android:text="@string/preset_example" />
+
+</LinearLayout>
+
